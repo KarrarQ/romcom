@@ -15,6 +15,7 @@ var homeBtn = document.querySelector(".home-button");
 var viewSavedCoversBtn = document.querySelector(".view-saved-button");
 var makeMyBookBtn = document.querySelector(".create-new-book-button");
 var savedCoverSection = document.querySelector(".saved-covers-section");
+// var deleteElementBtn = document.querySelector(".saved-covers-section");
 
 // ### varibles for form input ###
 
@@ -54,13 +55,17 @@ homeBtn.addEventListener("click", home);
 viewSavedCoversBtn.addEventListener("click", viewSavedCovers);
 createNewBookButton.addEventListener("click", makeYourCover);
 makeMyBookBtn.addEventListener("click", createNewBook);
-saveCoverBtn.addEventListener('click', saveCover);
+saveCoverBtn.addEventListener("click", saveCover);
+deleteElementBtn.addEventListener("dblclick", deleteElement);
 
 // Create your event handlers and other functions here 👇
 
+function deleteElement() {}
+
 function viewSavedCovers() {
-  for(var i = 1; i < savedCovers.length; i++) {
-    createCoverElement(savedCovers[i])
+  savedCoverSection.innerHTML = "";
+  for (var i = 1; i < savedCovers.length; i++) {
+    createCoverElement(savedCovers[i]);
   }
   homeView.classList.add("hidden");
   formView.classList.add("hidden");
@@ -99,23 +104,23 @@ function createNewBook(event) {
 }
 
 function saveCover() {
-  savedCovers.push(currentCover)
+  savedCovers.push(currentCover);
 }
 
 function createCoverElement(obj) {
-  var newDiv = document.createElement('div')
-  newDiv.classList.add('mini-cover')
+  var newDiv = document.createElement("div");
+  newDiv.setAttribute("id", obj.id);
+  newDiv.classList.add("mini-cover");
+  newDiv.style.overflow = "hidden";
+  newDiv.style.background = `url(${obj.cover})`;
+  newDiv.style.backgroundSize = "100%";
   newDiv.innerHTML = `
-  <img src = "${obj.cover}" alt = "romcom image" height = "100%">
   <h4 class='cover-title'>${obj.title}</h4>
-  <p class='tagline'> A tale of ${obj.tagLine1} and ${obj.tagLine2}</p>
-  `
+  <p class='tagline'> A tale of ${obj.tagline1} and ${obj.tagline2}</p>
+  `;
 
-  savedCoverSection.appendChild(newDiv)
-
+  savedCoverSection.appendChild(newDiv);
 }
-
-
 
 function home() {
   homeView.classList.remove("hidden");
