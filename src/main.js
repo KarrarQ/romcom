@@ -114,7 +114,15 @@ function createNewBook(event) {
 }
 
 function saveCover() {
-  savedCovers.push(currentCover);
+  var isSaved = false;
+  for (var i = 1; i < savedCovers.length; i++) {
+    if (currentCover.id === savedCovers[i].id) {
+      isSaved = true;
+    }
+  }
+  if (!isSaved) {
+    savedCovers.push(currentCover);
+  }
 }
 
 function createCoverElement(obj) {
