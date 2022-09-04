@@ -12,16 +12,7 @@ To view all saved covers, click the “View Saved Covers” button. This will ta
 To create your own cover, click the “Make Your Own Cover” button. This will take you to a new page where you are able to enter your own cover photo, title, and descriptors. Once you have entered all four inputs, click the “Make my book” button. This will take you back to the home page and your new cover will be displayed. You can also use the “Home” button to return to the home page and view the most recently generated cover.
 
 
-[GitHub test site](file:///Users/karrarq/Mod1/collabProject/romcom/index.html
-
-  **Main Page**
-
-![Main Page](file:///Users/karrarq/Mod1/collabProject/romcom/index.html)
-
-
-  **Saved Covers Page**
-
-  ![Saved Covers Page](file:///Users/karrarq/Mod1/collabProject/romcom/index.html)
+[GitHub test site](https://KarrarQ.github.io/romcom)
 
 ## Authors
 [Karrar Qasim](https://github.com/KarrarQ)
