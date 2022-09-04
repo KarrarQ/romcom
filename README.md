@@ -1,25 +1,34 @@
-# RomCom
 
-### Abstract:
+# RomCom: Paired Project
 
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
-A project for Turing School -- site loads a randomly generated romance novel cover, title, tagline, and it allows the user to load new randomly generated covers by clicking a button. Site allows user to make their own cover by putting an image link and text fields for title and tagline, and allows user to save covers they like to a page of saved covers by double clicking them.
 
-### Installation Instructions:
+This is a webpage that generates random romance novel covers..
 
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+## Description
+When the page loads, you will see a randomly generated romance novel cover. Click the “Show New Random Cover” button to generate a new cover. If you like a cover, click the “Save Cover” button to add it to the saved section.
 
-### Preview of App:
+To view all saved covers, click the “View Saved Covers” button. This will take you to a new page that displays all of your saved covers. To remove a cover from the saved section, double click that cover. From here, you can go back to the home page using the “Home” button, or create your own cover using the “Make Your Own Cover” button.
 
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+To create your own cover, click the “Make Your Own Cover” button. This will take you to a new page where you are able to enter your own cover photo, title, and descriptors. Once you have entered all four inputs, click the “Make my book” button. This will take you back to the home page and your new cover will be displayed. You can also use the “Home” button to return to the home page and view the most recently generated cover.
 
-### Context:
 
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+[GitHub test site](file:///Users/karrarq/Mod1/collabProject/romcom/index.html
 
-### Contributors:
+  **Main Page**
 
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+![Main Page](file:///Users/karrarq/Mod1/collabProject/romcom/index.html)
+
+
+  **Saved Covers Page**
+
+  ![Saved Covers Page](file:///Users/karrarq/Mod1/collabProject/romcom/index.html)
+
+## Authors
+[Karrar Qasim](https://github.com/KarrarQ)
+
+[Dmitrii Gubko](https://github.com/dgubko)
+
+https://github.com/KarrarQ
 
 ### Learning Goals:
 
@@ -29,7 +38,7 @@ Languages and technologies.
 -- Pre-written HTML and CSS.
 Learning goals.
 
-1. Whrite clean Java Script to store our data.
+1. write clean Java Script to store our data.
 2. Use a provided Class by creating object instance using the new keyword.
 3. Manipulate the page after in has loaded adding, removing and updating elements and DOM.
 4. Practice working collaboratively through a GitHub and begiining to use grid workflow practice with commits and pull requests.
